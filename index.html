@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pour Shama</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.6;
+      margin: 0 20px;
+    }
+    .signature {
+      margin-top: 30px;
+      font-style: italic;
+      color: #ffb6c1;
+    }
+    .link-button {
+      margin-top: 40px;
+      background-color: #ff69b4;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .link-button:hover {
+      background-color: #ff85c1;
+    }
+    .stars, .moon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+    .stars::before, .stars::after {
+      content: '';
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      animation: twinkle 2s infinite ease-in-out alternate;
+    }
+    .stars::before { top: 30%; left: 20%; }
+    .stars::after { top: 70%; left: 75%; }
+    .moon {
+      background: radial-gradient(circle at 50% 50%, #fdfcfb 0%, #d3d3d3 40%, transparent 50%);
+      width: 100px;
+      height: 100px;
+      top: 50px;
+      left: 50px;
+      border-radius: 50%;
+    }
+    @keyframes twinkle {
+      from { opacity: 0.2; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="moon"></div>
+  <h1>Pour toi, Shama 🌙</h1>
+  <p>
+    J’aimerais que tu saches à quel point je t’aime et je t’admire.<br>
+    Même à distance, tu occupes mes pensées chaque jour.<br><br>
+    Je suis désolé pour mes fautes, mes silences, mes absences...<br>
+    Je ne veux que ton bien, ton bonheur, ta lumière.<br><br>
+    Reste la belle âme que tu es.<br>
+    Je suis sensible à toi, à tout ce que tu es.
+  </p>
+  <div class="signature">
+    — De tout cœur, toujours 💖
+  </div>
+  <a href="motsdamour.html" class="link-button">Quelques mots d’amour pour toi</a>
+</body>
+</html>
